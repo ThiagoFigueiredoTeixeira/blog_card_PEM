@@ -5,6 +5,10 @@
       - Gray 950: hsl(0, 0%, 7%) 
       */
 
+    html {
+      font-size: 100%;
+    }
+
 
     body{
       background-color: hsl(47, 88%, 63%) ;
@@ -13,42 +17,85 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      font-size: 16px;
       font-family: "Figtree", sans-serif;
       font-optical-sizing: auto;
       /*font-weight: 500, 800;*/
       font-style: normal;
     }
 
+/*CAIXA PRINCIPAL*/
     .conteiner_principal{
       padding: 1em;
       margin: 0;
-      height: 70vh;
-      width: 40vh;
+      width: clamp(250px, 80vw, 340px);
+      height: auto;
       background-color: hsl(0, 0%, 100%);
       display: flex;
       flex-direction: column;
       border-radius: 15px;
       box-shadow: 5px 5px 0 1px;
+      border: 0.1em solid hsl(0, 0%, 7%);
     }
 
+    /*TEXTO COM FUNDO AMARELO*/
     .aprendendo {
         background-color: hsl(47, 88%, 63%);
         font-weight: bold;
         width: fit-content;
-        padding: 0.3em 0.9em 0.3em 0.9em ;
-        border-radius: 5px;
-        font-size: 0.7em;
+        padding: 0.4em 0.9em 0.4em 0.9em ;
+        border-radius: 0.3rem;
+        font-size: clamp(0.8rem, 1vw, 4rem);
         color: hsl(0, 0%, 7%);
         
     }
 
+    /*DATA PUBLICAÇÃO*/
     .publicacao {
-      font-size: 0.7em;
+      font-size: clamp(0.8rem, 1vw, 4rem);
       color: hsl(0, 0%, 7%);
+      font-weight: bold;
+      margin: 0;
     }
 
+    /*CURSO E AÇÂO DINAMICA AO PASSAR MOUSE*/
     .nomecurso {
-      color: hsl(47, 88%, 63%) ;
+      color: hhsl(0, 0%, 7%);
       font-weight: bold;
+      font-size: clamp(1.5rem, 2vw, 4rem);
+
+    }
+
+    .nomecurso:hover{
+      color:hsl(47, 88%, 63%) ;
+      cursor: pointer;
+    }
+
+    /*IMAGEM DO CARD*/
+    .imgcard {
+      border-radius: 1rem;
+    }
+
+    /*TEXTO DO CARD*/
+    .cardtext{
+      color: hsl(0, 0%, 42%);
+      font-size: clamp(1rem, 1.5vw, 4rem);
+      margin: 0;
+      line-height: 1.5rem;
+
+    }
+
+    /*NOME AUTOR e IMG*/
+    .autoria{
+      font-size: clamp(0.9rem, 1vw, 4rem);
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      margin-top: 1.5rem;
+
+    }
+
+    .imgautor {
+      padding-right: 0.6em;
+      height: 4vh;
+
     }
