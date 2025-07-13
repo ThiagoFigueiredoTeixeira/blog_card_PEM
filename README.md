@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-blog-card-with-html-e-css-Xrl5DYm20_)
 - Live Site URL: [Add live site URL here](https://thiagofigueiredoteixeira.github.io/blog_card_PEM/)
 
 ## My process
